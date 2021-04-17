@@ -28,3 +28,4 @@ print("\nSaisissez la date à laquelle vous souhaitez connaître votre âge :")
 d2 = SaisieDate()
 print("Le", d2, ", votre âge est de", (d2 - d1)[0], "ans et", (d2 - d1)[1], "jours (à un jour près).")
 
+

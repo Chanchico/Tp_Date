@@ -55,11 +55,16 @@ class Date(object):
         jours = int(delta.days%365.25)
         return age, jours
 
-
-
-
-
-
+    def bissextile(self, value):
+        if value % 4 == 0:
+            if value % 100 != 0:
+                return True
+            elif value % 100 == 0 and value % 400 == 0:
+                return True
+            else:
+                return False
+        else:
+            return False
 
 
 
